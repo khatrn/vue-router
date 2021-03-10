@@ -4,6 +4,9 @@
     <p>
       <router-link to="/foo">Foo</router-link>
       <router-link to="/bar">Bar</router-link>
+      <router-link to="/user/foo">Foo-Home</router-link>
+      <router-link to="/user/foo/profile">Foo-User</router-link>
+      <router-link to="/user/foo/post">Foo-Post</router-link>
     </p>
     <router-view/>
   </div>

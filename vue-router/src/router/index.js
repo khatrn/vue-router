@@ -14,6 +14,7 @@ const routes = [
 ]
 
 const route = new Router({
+  'mode': 'history',
   routes
 })
 

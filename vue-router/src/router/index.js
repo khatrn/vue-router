@@ -14,21 +14,24 @@ const User = {
         </div>` }
 
 const routes = [
-  { path: '/foo', component: Foo },
-  { path: '/bar', component: Bar },
+  { path: '/foo', name: 'Foo', component: Foo },
+  { path: '/bar', name: 'Bar', component: Bar },
   { path: '/user/:id',
     component: User,
     children: [
       {
         path: '',
+        name: 'UserHome',
         component: UserHome
       },
       {
         path: 'profile',
+        name: 'UserProfile',
         component: UserProfile
       },
       {
         path: 'post',
+        name: 'UserPost',
         component: UserPost
       }]
   }

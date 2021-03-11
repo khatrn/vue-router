@@ -2,11 +2,11 @@
   <div id="app">
     <h1>Hello App!</h1>
     <p>
-      <router-link to="/foo">Foo</router-link>
-      <router-link to="/bar">Bar</router-link>
-      <router-link to="/user/foo">Foo-Home</router-link>
-      <router-link to="/user/foo/profile">Foo-User</router-link>
-      <router-link to="/user/foo/post">Foo-Post</router-link>
+      <router-link :to="{ name: 'Foo' }">Foo</router-link>
+      <router-link :to="{ name: 'Bar' }">Bar</router-link>
+      <router-link :to="{ name: 'UserHome' }">Foo-Home</router-link>
+      <router-link :to="{ name: 'UserProfile'}">Foo-Profile</router-link>
+      <router-link :to="{ name: 'UserPost'}">Foo-Post</router-link>
     </p>
     <router-view/>
   </div>

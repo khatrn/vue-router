@@ -1,21 +1,7 @@
 <template>
   <div id="app">
-    <h1>Hello App!</h1>
-    <p>
-      <router-link :to="{ name: 'Foo' }">Foo</router-link>
-      <router-link :to="{ name: 'Bar' }">Bar</router-link>
-      <router-link :to="{ name: 'UserHome', params: {id: 'foo'}}">Foo-Home</router-link>
-      <router-link :to="{ name: 'UserProfile', params: {id: 'foo'}}">Foo-Profile</router-link>
-      <router-link :to="{ name: 'UserPost', params: {id: 'foo'}}">Foo-Post</router-link>
-    </p>
+    <h1>Menu</h1>
     <router-view/>
-    <ul>
-      <li><router-link to="/">Root</router-link></li>
-      <li><router-link to="/other">Other</router-link></li>
-    </ul>
-    <router-view class="view one"></router-view>
-    <router-view class="view two" name="a"></router-view>
-    <router-view class="view three" name="b"></router-view>
   </div>
 </template>
 

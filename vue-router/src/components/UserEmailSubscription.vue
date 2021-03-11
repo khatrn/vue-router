@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h3>User Profile</h3>
+    <h3>Email Subscriptions</h3>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'UserProfile'
+  name: 'UserEmailSubscription'
 }
 </script>
 

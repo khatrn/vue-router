@@ -9,6 +9,13 @@
       <router-link :to="{ name: 'UserPost', params: {id: 'foo'}}">Foo-Post</router-link>
     </p>
     <router-view/>
+    <ul>
+      <li><router-link to="/">Root</router-link></li>
+      <li><router-link to="/other">Other</router-link></li>
+    </ul>
+    <router-view class="view one"></router-view>
+    <router-view class="view two" name="a"></router-view>
+    <router-view class="view three" name="b"></router-view>
   </div>
 </template>
 
